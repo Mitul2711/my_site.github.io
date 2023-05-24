@@ -329,7 +329,7 @@ footer {
 .about-content p {
   color: white;
 }
-
+/* 
 .about-content button {
   background-color: #29e9bc;
   border-radius: 30px;
@@ -340,4 +340,4 @@ footer {
 .about-content button:hover {
   background-color: black;
   color: #29e9bc;
-}
+} */
