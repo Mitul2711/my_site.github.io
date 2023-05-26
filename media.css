@@ -8,12 +8,13 @@
     
     .logo {
       height: 40px;
+      padding-left: 9px;
     }
   
    
     .menu li {
       font-size: 14px;
-      margin-right: 20px;
+      margin-right: 10px;
     }
   
 
