@@ -2,7 +2,7 @@ function myFunction(event) {
   if (event.key == 'Enter') {
     let co = confirm("Confirm to send a message!");
     if (co == 1) {
-      document.getElementById("f1").action = "mailto:mitulgondaliya27@gmail.com";
+      document.getElementById("f1").action = "mailto:mitulgondaliya02@gmail.com";
     }else{
       event.preventDefault();
     }
@@ -127,5 +127,6 @@ input.onkeydown = e => {
     }, 300);
   }
 };
+
 
 
