@@ -444,23 +444,23 @@ footer {
 }
 
 .bar .progress-line.css span {
-  width: 60%;
+  width: 80%;
 }
 
 .bar .progress-line.jquery span {
-  width: 85%;
+  width: 60%;
 }
 
 .bar .progress-line.python span {
-  width: 50%;
+  width: 70%;
 }
 
 .bar .progress-line.mysql span {
-  width: 75%;
+  width: 40%;
 }
 
-.bar .progress-line.php span {
-  width: 90%;
+.bar .progress-line.Csharp span {
+  width: 70%;
 }
 
 .progress-line span::before {
@@ -504,23 +504,23 @@ footer {
 }
 
 .progress-line.css span::after {
-  content: "60%";
+  content: "80%";
 }
 
 .progress-line.jquery span::after {
-  content: "85%";
+  content: "60%";
 }
 
 .progress-line.python span::after {
-  content: "50%";
+  content: "70%";
 }
 
 .progress-line.mysql span::after {
-  content: "75%";
+  content: "40%";
 }
 
-.progress-line.php span::after {
-  content: "90%";
+.progress-line.Csharp span::after {
+  content: "70%";
 }
 
 .new h2 {
@@ -538,7 +538,6 @@ footer {
 
 
 
-/* edit by jbond */
 
 /* nav-bar */
 
@@ -845,7 +844,7 @@ transition: all .3s ease-in;
   
 
 
-/* **************** footer by Jbond *************** */
+/* **************** footer *************** */
 
 footer {
   display: grid;
