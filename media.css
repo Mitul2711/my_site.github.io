@@ -1,15 +1,17 @@
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
  
-    .body {
-        background-color: black;
-    }
     
     
     .logo {
       height: 40px;
       padding-left: 9px;
     }
+
+    .menu {
+      right: 3%;
+    }
+
   
    
     .menu li {
@@ -114,3 +116,9 @@
 
   }
   
+
+  @media only screen and (min-width: 768px) {
+    .mobile-menu-btn {
+      display: block;
+    }
+  }
