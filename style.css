@@ -444,23 +444,23 @@ footer {
 }
 
 .bar .progress-line.css span {
-  width: 80%;
-}
-
-.bar .progress-line.jquery span {
   width: 60%;
 }
 
+.bar .progress-line.jquery span {
+  width: 85%;
+}
+
 .bar .progress-line.python span {
-  width: 70%;
+  width: 50%;
 }
 
 .bar .progress-line.mysql span {
-  width: 40%;
+  width: 75%;
 }
 
-.bar .progress-line.Csharp span {
-  width: 70%;
+.bar .progress-line.php span {
+  width: 90%;
 }
 
 .progress-line span::before {
@@ -504,23 +504,23 @@ footer {
 }
 
 .progress-line.css span::after {
-  content: "80%";
-}
-
-.progress-line.jquery span::after {
   content: "60%";
 }
 
+.progress-line.jquery span::after {
+  content: "85%";
+}
+
 .progress-line.python span::after {
-  content: "70%";
+  content: "50%";
 }
 
 .progress-line.mysql span::after {
-  content: "40%";
+  content: "75%";
 }
 
-.progress-line.Csharp span::after {
-  content: "70%";
+.progress-line.php span::after {
+  content: "90%";
 }
 
 .new h2 {
@@ -538,7 +538,7 @@ footer {
 
 
 
-
+/* edit by jbond */
 
 /* nav-bar */
 
@@ -845,7 +845,7 @@ transition: all .3s ease-in;
   
 
 
-/* **************** footer *************** */
+/* **************** footer by Jbond *************** */
 
 footer {
   display: grid;
@@ -1038,6 +1038,7 @@ transition-delay: 200ms;
 input[type=text] {
   font-size: 20px;
   font-family: "Chivo";
+  col;
 }
 
 #container {
@@ -1048,7 +1049,7 @@ input[type=text] {
   padding: 1em;
   border: none;
   border-radius: 2.2em;
-  background: gray;
+  background: whitesmoke;
   transition: background 0.3s;
 }
 input[type=text]:focus {
@@ -1148,7 +1149,7 @@ input[type=text]:focus + .ghost .ghost__legs {
 .ghost__face .ghost__eyes-l, .ghost__face .ghost__eyes-r {
   width: 0.8em;
   height: 0.8em;
-  background: #333;
+  background: #111;
   border-radius: 100%;
   position: absolute;
   bottom: 0.4em;
@@ -1163,13 +1164,13 @@ input[type=text]:focus + .ghost .ghost__legs {
   width: 0.5em;
   height: 0.3em;
   border-radius: 50px;
-  border: 0.2em solid #333;
+  border: 0.2em solid #111;
   border-top: none;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
 .ghost__face .ghost__mouth--open {
-  border-top: 0.2em solid #333;
+  border-top: 0.2em solid #111;
   height: 0.2em;
 }
 
@@ -1178,7 +1179,8 @@ input[type=text]:focus + .ghost .ghost__legs {
   height: 7em;
   background: inherit;
   border-radius: 100px;
-  box-shadow: 0 0 12px #424242;
+  /* box-shadow: 0 0 12px #424242; */
+  box-shadow: 0 0 12px #111111;
   transition: all 0.3s background 0.4s 0.1s;
   transform: translate(-50%, 50px);
   z-index: -1;
@@ -1192,7 +1194,7 @@ input[type=text]:focus + .ghost .ghost__legs {
   width: 1em;
   height: 1.5em;
   background: white;
-  box-shadow: 0 4px 4px rgba(51, 51, 51, 0.3);
+  box-shadow: 0 4px 4px rgba(1, 1, 1, 0.3);
 }
 .ghost__hands-r {
   transform: translate(1.5em, 1em) rotate(15deg);
@@ -1206,7 +1208,7 @@ input[type=text]:focus + .ghost .ghost__legs {
   height: 1.5em;
   top: 100%;
   background: inherit;
-  box-shadow: 0 0 12px #424242;
+  box-shadow: 0 0 12px #111111;
   border-bottom-left-radius: 0.4em;
   border-bottom-right-radius: 0.4em;
 }

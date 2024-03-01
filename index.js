@@ -1,14 +1,46 @@
 function myFunction(event) {
-  if (event.key == 'Enter') {
+  if (event.keyCode === 13) { // Check if the Enter key was pressed
+    // Get the value of the input field
+    var input = document.getElementById("ghost-input").value;
+
+    // Make an HTTP request to your server
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "/send-email", true);
+    xhr.setRequestHeader("Content-Type", "application/json");
+
+    // Prepare the data to be sent in the request body
+    var data = JSON.stringify({
+      to: "mitulgondaliya27@gmail.com",
+      subject: "Email Subject",
+      message: input
+    });
+
+    // Handle the server's response
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+        console.log("Email sent successfully");
+        // Optionally, display a success message to the user
+      }
+    };
+
+    // Send the request
+    xhr.send(data);
+
+    // Clear the input field
+    document.getElementById("ghost-input").value = "";
+  }
+}
+
+function myFunction(event) {
+  if (event.key === 'Enter') {
     let co = confirm("Confirm to send a message!");
-    if (co == 1) {
-      document.getElementById("f1").action = "mailto:mitulgondaliya02@gmail.com";
-    }else{
+    if (co) {
+      document.getElementById("ghost-input").action = "mailto:mitulgondaliya27@gmail.com";
+    } else {
       event.preventDefault();
     }
   }
 }
-
 
 
 var typed = new Typed(".typing",{
@@ -45,6 +77,8 @@ window.addEventListener("scroll", function() {
 });
 
 
+
+// edit by jbodn
 function show(){
   document.querySelector('.hamburger').classList.toggle('open')
   document.querySelector('.navigation').classList.toggle('active')
@@ -127,6 +161,5 @@ input.onkeydown = e => {
     }, 300);
   }
 };
-
 
 
